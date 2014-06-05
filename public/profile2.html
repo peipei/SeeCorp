@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--<script type="text/javascript" src = "public/javascripts/profile.js"></script>-->
+	<script type="text/javascript" src = "./javascripts/fblogin.js"></script>
+	<script type="text/javascript" src="http://connect.facebook.net/en_US/all.js"></script>
+    <meta charset="utf-8">
+    <title>Profile</title>
+	
+     <link rel="stylesheet" href="./css/profile2style.css">
+	 
+	 <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="./bootstrap-social-gh-pages/bootstrap-social.css">
+	<link rel="stylesheet" href="./font-awesome-4.1.0/css/font-awesome.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	
+  </head>
+  <body>
+  <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://peipei.csie.org:5000/index.html">透視企業SeeCorp</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="http://peipei.csie.org:5000/companyList.html">Corporation</a></li>
+          </ul>
+		 <ul class="nav navbar-nav navbar-right">
+		 
+
+			<a class="btn btn-social-icon btn-facebook" onClick="checkLoginState()"><i class="fa fa-facebook"></i></a>
+
+		  
+		 </ul>
+		 <ul>
+		 
+		 </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+  </div>
+   
+    <div id="table2">
+	 <center><strong><h2>Please fill in the information</h2></strong></center>
+      <div style="text-align:center;">
+		<br></br>　		
+
+		<strong>公司類別：</strong>
+		<form action="/users" method="post">
+	    <input type="radio" name="CoopType" value=1>資訊科技&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="CoopType" value=2>文創、媒體、基金會</br>
+		<p></p>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="CoopType" value=3>消費品、傳產、生技&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="CoopType" value=4>金融、會計、顧問</br>
+		<p></p>
+		<p></p>
+		<strong>暱稱：</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name" placeholder="ex. 馬卡茸">
+		<p></p>
+		<strong>性別：</strong>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="gender" value=1>男&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="gender" value=2>女&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<p></p>
+		<strong>任職公司：</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="Coop" placeholder="ex. 台灣積體電路"></br>
+		<p></p>
+		<strong>職稱：</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="title" placeholder="ex. 總經理"></br>
+		<p></p>
+		<strong>工作年數：</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="year" placeholder="ex. 5"></br>
+		<p></p>
+		<strong>每月平均薪資：</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="salary" placeholder="ex. 22000"></br>
+		<p></p>
+		<strong>每日平均工時：</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="worktime" placeholder="ex. 10"></br></br>
+		<p></p>
+		<div id="hiddenid"></div>
+		<input type="submit" value="送出">
+		<input type="reset" value="重填"></br>
+		</form>
+	   </div>
+	</div>
+	
+	
+  <div id="logo">
+   <img src="./img/SeeCorp_logo2.jpg" width="100px" height="100px"class="img-circle">
+   
+  </div>				
+  </body>				
+</html>

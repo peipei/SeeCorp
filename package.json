@@ -1,0 +1,16 @@
+{
+  "name": "final",
+  "version": "0.0.0",
+  "description": "final project for ccsp",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^3.8.1",
+    "mongoose": "^3.8.9"
+  }
+}

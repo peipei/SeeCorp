@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Todo: 
+			登入Onclick 帳號密碼驗證(post->login)
+			ok 申請帳號link to profile2
+			FB Login 連接 FB Login
+	-->
+    <script type="text/javascript" src = "javascripts/profile.js"></script>
+	<script type="text/javascript" src = "javascripts/fblogin.js"></script>
+    <meta charset="utf-8">
+    <title>Log in</title>
+	
+	 <link rel="stylesheet" href="./css/normalize.css">
+     <link rel="stylesheet" href="./css/style.css">
+
+  </head>
+  
+  <body>   
+
+
+  <center><h1 class="panel-title">Join us on FOOLPIN</h1></center>
+  
+   <div id="table">
+		<div class="panel-body">
+			<div id="left">
+				<h2>Create an Account</h2></br>
+				
+				<form action="/login" method="post">
+					e-mail： <input type="text" name="email" placeholder="ex. abc@gmail.com"></br>
+					<p></p>
+					密碼：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" name="pwd" placeholder="ex. 1234567"></br>
+					<!--性別：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="gender" value=1>男
+						   &nbsp;&nbsp;<input type="radio" name="gender" value=0>女</br>
+				    <p></p>-->
+					<input id="button3" type="submit" value="登入">
+				</form>
+			
+				<div id="button1">
+				<a href="./profile2.html">申請帳號</a>
+				</div>
+				
+		    </div>
+			<div id="right">
+				<h2>Log in with FACEBOOK</h2>
+			</div>
+			<div id="fblogin">
+				<fb:login-button scope="public_profile,email" size="xlarge" autologoutlink=true 			onlogin="checkLoginState();">
+				</fb:login-button>
+				<div id="status">
+				</div>
+			</div>
+        </div>  
+   </div>
+   
+   
+ 
+  </body>
+</html>
